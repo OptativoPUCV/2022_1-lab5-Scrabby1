@@ -199,6 +199,11 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+  Pair* resultado=searchTreeMap(tree,key);
+  if(resultado!=NULL)
+  {
+    return resultado;
+  }
     return NULL;
 }
 
